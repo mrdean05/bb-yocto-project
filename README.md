@@ -22,7 +22,7 @@ cd poky
 source oe-init-build-env ../build_bb
 ```
 - Make the below changes in the local.conf
-![alt text](file:///home/mr_dean/Pictures/Screenshot%20from%202024-04-10%2017-28-50.png)
+![local.conf file](editlocalconf.png)
 
 - Bake your preferred image
 ```shell
