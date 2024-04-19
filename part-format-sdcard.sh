@@ -1,5 +1,5 @@
 # Format and partition the sdcard and copy images to the partition
-# This inly works for sfdisk v2.5.3
+# This only works for sfdisk v2.5.3
 #!/bin/bash
 
 echo "Formatting the SD card"
@@ -88,5 +88,5 @@ sudo cp MLO /media/$USER/BOOT
 sudo cp u-boot.img /media/$USER/BOOT
 sudo cp zImage /media/$USER/BOOT
 sudo cp am335x-boneblack.dtb /media/$USER/BOOT
-sudo tar -xf core-minimal-beaglebone-yocto.tar.bz2 -C /media/$USER/ROOT
+sudo tar -xf core-image-minimal-beaglebone-yocto.tar.bz2 -C /media/$USER/ROOT
 sync
