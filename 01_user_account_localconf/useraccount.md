@@ -22,7 +22,7 @@ ROOT_PASSWD = "\$5\$DIGY8ujtTHG.t\$XZxdnWlm.DS/u8pTGqSHxPsAmiXxMccrCBTuUEjoY.6"
 OTHERS_PASSWD = "\$5\$75.TJUegDb9vh0\$.mAQsRcZ6YNnZzEsOkq8HeFH5vJ/kcY6KSSUZ02wpk/"
 
 EXTRA_USERS_PARAMS = "\
-    usermod -p '${ROOTRASSWD}' root; \
+    usermod -p '${ROOT_PASSWD}' root; \
     useradd -p '${OTHERS_PASSWD}' mrdean01; \
     useradd -p '${OTHERS_PASSWD}' mrdean02; \ 
     "
