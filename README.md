@@ -44,6 +44,16 @@ $ dmesg
 ```shell
 $ sudo dd if=core-image-minimal-beaglebone-yocto.wic of=/dev/sdb
 ```
-- Plug the sd card and fix it to your beaglebone. Connect the txd, rxd, gnd of your beaglebone to a uart-usb adapter connect to your machine.
+- Plug the sd card and fix it to your beaglebone. Connect the txd, rxd, gnd of your beaglebone to a uart-usb adapter connected to your machine.
 
-- By beaglebone black boots from the internal eMMC storage, to boot a new image from the sdcard, press and hold the reset button while you power your board. 
+- After connecting serial and beaglebone black to pc, using the dmesg to identify the new port
+```shell
+$ dmesg
+```
+![lfile](images/serial.png)
+
+- Use the command to access the beaglebone black
+```shell
+$ sudo picocom -b 115200 /dev/ttyACM0
+```
+- By default beaglebone black boots from its internal eMMC storage, to boot a new image from the sdcard, press and hold the reset button while you power your board. 
