@@ -27,7 +27,7 @@ $ touch ../poky/meta-custom/recipe-core/images/mrdean-core-image-base.bb
 ```
 - Creating an image from core-image-base
 ```bash
-nano ../poky/meta-custom/recipe-core/images/mrdean-core-image-base.bb
+$ nano ../poky/meta-custom/recipe-core/images/mrdean-core-image-base.bb
 ```
 - Copy the below and add to the image recipe(mrdean-core-image-base.bb)
 ```bash
@@ -53,7 +53,7 @@ EXTRA_USERS_PARAMS = "\
 ```
 - Create bake new image
 ```bash
-bitbake mrdean-core-image-base
+$ bitbake mrdean-core-image-base
 ```
 
 
