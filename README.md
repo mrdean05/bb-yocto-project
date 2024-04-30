@@ -9,8 +9,14 @@
 |----------------------------|-----------------------|
 | ubuntu 18.04/20.04/22.04   | Beaglebone black      |
 
+## 3. Task
+| Task   | Description                                               |
+|--------|-----------------------------------------------------------|
+| 01     | adding and modifying user account in local.conf           |
+| 02     | created a layer and wrote a recipe image                  |
 
-## 3. Setup, baking, generating and flashing an image
+
+## 4. Setup, baking, generating and flashing an image
 - Download poky repo
 ```shell
 $ git clone https://git.yoctoproject.org/poky -b kirkstone
@@ -19,7 +25,7 @@ $ git clone https://git.yoctoproject.org/poky -b kirkstone
 - Prepare the build environment
 ```shell
 $ cd poky
-$ source oe-init-build-env ../build_bb
+$ source oe-init-build-env ../build_beaglebone
 ```
 - Make the below changes in the local.conf
 ![file](images/editlocalconf.png)
